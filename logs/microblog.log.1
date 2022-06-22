@@ -1,0 +1,95 @@
+2022-06-21 09:15:23,287 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 09:15:31,065 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 09:15:46,272 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 09:54:08,531 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 15:47:27,829 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 16:32:26,857 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 16:41:58,751 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 16:42:10,131 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Git-CMU\Module2-bug-fixes\app\auth\routes.py", line 19, in login
+    user = User.query.filter_by(username=form.Username.name).first()
+AttributeError: 'LoginForm' object has no attribute 'Username'
+2022-06-21 16:42:40,542 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 16:44:04,740 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 16:53:10,945 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 16:53:16,040 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Git-CMU\Module2-bug-fixes\app\auth\routes.py", line 20, in login
+    print(user.username)
+AttributeError: 'NoneType' object has no attribute 'username'
+2022-06-21 16:55:20,625 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 16:55:25,409 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Git-CMU\Module2-bug-fixes\app\auth\routes.py", line 19, in login
+    print(User[0])
+TypeError: 'DefaultMeta' object is not subscriptable
+2022-06-21 16:55:31,265 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Git-CMU\Module2-bug-fixes\app\auth\routes.py", line 19, in login
+    print(User[0])
+TypeError: 'DefaultMeta' object is not subscriptable
+2022-06-21 19:55:11,404 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Git-CMU\Module2-bug-fixes\app\auth\routes.py", line 19, in login
+    print(User[0])
+TypeError: 'DefaultMeta' object is not subscriptable
+2022-06-21 20:30:19,200 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 20:30:56,260 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Git-CMU\Module2-bug-fixes\app\auth\routes.py", line 19, in login
+    print(User[0])
+TypeError: 'DefaultMeta' object is not subscriptable
+2022-06-21 20:31:54,489 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 20:37:44,263 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 20:39:17,547 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 20:40:38,935 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]
+2022-06-21 20:41:51,958 INFO: Microblog startup [in C:\Git-CMU\Module2-bug-fixes\app\__init__.py:89]

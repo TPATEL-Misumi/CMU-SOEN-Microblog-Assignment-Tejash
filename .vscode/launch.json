@@ -1,0 +1,28 @@
+{
+    "name": "Flask",
+    "type": "python",
+    "request": "launch",
+    "stopOnEntry": false,
+    "pythonPath": "${config:python.pythonPath}",
+    "program": "${workspaceRoot}/app.py",
+    "env": {
+        "FLASK_APP": "${workspaceRoot}/app.py" 
+    },
+    "args": [
+        "run"
+        // --no-debug and one more line removed.
+    ],
+    "envFile": "${workspaceFolder}/.env",
+    "debugOptions": [
+        "RedirectOutput"
+    ],
+    "configurations": [
+    {
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
+    }
+    ]
+}
