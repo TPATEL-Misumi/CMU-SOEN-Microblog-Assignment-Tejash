@@ -1,0 +1,45 @@
+app - INFO - Microblog startup
+werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:45:37] "[32mGET /index HTTP/1.1[0m" 302 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:45:38] "GET /auth/login?next=%2Findex HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:45:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:45:49] "[32mPOST /auth/login?next=%2Findex HTTP/1.1[0m" 302 -
+root - INFO - Last read time: 2022-06-27 02:23:04.517156
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:45:49] "GET /index HTTP/1.1" 200 -
+root - INFO - Last read time: 2022-06-27 02:23:04.517156
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:45:58] "GET /user/tpatel HTTP/1.1" 200 -
+root - INFO - Last read time: 2022-06-27 02:23:04.517156
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:01] "GET /edit_profile HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:09] "[32mPOST /edit_profile HTTP/1.1[0m" 302 -
+root - INFO - Last read time: 2022-06-27 02:23:04.517156
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:09] "GET /edit_profile HTTP/1.1" 200 -
+root - INFO - Last read time: 2022-06-27 02:46:12.692719
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:12] "GET /messages HTTP/1.1" 200 -
+root - INFO - Last read time: 2022-06-27 02:46:12.692719
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:13] "GET /user/tpatel HTTP/1.1" 200 -
+root - INFO - Last read time: 2022-06-27 02:46:12.692719
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:15] "GET /edit_profile HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:17] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:17] "[32mGET /index HTTP/1.1[0m" 302 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:17] "GET /auth/login?next=%2Findex HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:28] "[32mPOST /auth/login?next=%2Findex HTTP/1.1[0m" 302 -
+root - INFO - Last read time: 2022-06-27 02:46:12.692719
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:28] "GET /index HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:37] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:37] "[32mGET /index HTTP/1.1[0m" 302 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:37] "GET /auth/login?next=%2Findex HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:43] "[32mPOST /auth/login?next=%2Findex HTTP/1.1[0m" 302 -
+root - INFO - Last read time: 2022-06-27 02:46:12.692719
+root - INFO - []
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:43] "GET /index HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:45] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:45] "[32mGET /index HTTP/1.1[0m" 302 -
+werkzeug - INFO - 127.0.0.1 - - [26/Jun/2022 21:46:45] "GET /auth/login?next=%2Findex HTTP/1.1" 200 -
