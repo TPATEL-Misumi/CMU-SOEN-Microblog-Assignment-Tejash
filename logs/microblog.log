@@ -65,3 +65,5 @@ Traceback (most recent call last):
     user = User.query.filter_by(email=form.email.data).first()
 AttributeError: 'LoginForm' object has no attribute 'email'
 2022-06-26 21:45:26,241 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+2022-06-27 09:24:39,395 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+2022-06-27 09:49:55,140 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
