@@ -1,41 +1,7 @@
-app - INFO - Microblog startup
 werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:49:55] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:04] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
 root - INFO - Last read time: 2022-06-27 02:46:12.692719
 root - INFO - []
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:14] "GET /edit_profile HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:14] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jun/2022 13:50:35] "POST /edit_profile HTTP/1.1" 200 -
 root - INFO - Last read time: 2022-06-27 02:46:12.692719
 root - INFO - []
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:15] "GET /edit_profile HTTP/1.1" 200 -
-root - INFO - Last read time: 2022-06-27 02:46:12.692719
-root - INFO - []
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:18] "GET /index HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:19] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:19] "[32mGET /index HTTP/1.1[0m" 302 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:19] "GET /auth/login?next=%2Findex HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:21] "[32mPOST /auth/login?next=%2Findex HTTP/1.1[0m" 302 -
-root - INFO - Last read time: 2022-06-27 02:46:12.692719
-root - INFO - []
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:21] "GET /index HTTP/1.1" 200 -
-root - INFO - Last read time: 2022-06-27 02:46:12.692719
-root - INFO - []
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:23] "GET /user/tpatel HTTP/1.1" 200 -
-root - INFO - Last read time: 2022-06-27 02:46:12.692719
-root - INFO - []
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:25] "GET /edit_profile HTTP/1.1" 200 -
-root - INFO - Last read time: 2022-06-27 02:46:12.692719
-root - INFO - []
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:33] "POST /edit_profile HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:42] "[32mPOST /edit_profile HTTP/1.1[0m" 302 -
-root - INFO - Last read time: 2022-06-27 02:46:12.692719
-root - INFO - []
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:42] "GET /edit_profile HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:50:53] "GET /notifications?since=0 HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:51:03] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:51:13] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:51:40] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:51:43] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:51:53] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
-werkzeug - INFO - 127.0.0.1 - - [27/Jun/2022 09:52:03] "GET /notifications?since=1656297972.712906 HTTP/1.1" 200 -
+werkzeug - INFO - 127.0.0.1 - - [28/Jun/2022 13:50:37] "POST /edit_profile HTTP/1.1" 200 -

@@ -1,3 +1,4 @@
+import re
 from wsgiref.validate import validator
 from flask import request
 from flask_wtf import FlaskForm
@@ -23,6 +24,9 @@ class EditProfileForm(FlaskForm):
             user = User.query.filter_by(username=self.username.data).first()
             if user is not None:
                 raise ValidationError(_('Please use a different username.'))
+ 
+
+
 
 
 class EmptyForm(FlaskForm):

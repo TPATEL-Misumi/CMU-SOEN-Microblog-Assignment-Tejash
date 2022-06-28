@@ -1,10 +1,4 @@
-2022-06-24 16:33:03,449 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-24 16:33:08,612 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-24 16:33:34,834 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-24 16:50:45,915 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-26 21:11:23,379 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-26 21:20:37,762 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-26 21:20:44,371 ERROR: Exception on /edit_profile [GET] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+2022-06-27 22:25:34,471 ERROR: Exception on /edit_profile [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
 Traceback (most recent call last):
   File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
     response = self.full_dispatch_request()
@@ -16,10 +10,24 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_login\utils.py", line 303, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
-  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\main\routes.py", line 104, in edit_profile
-    form.email.data = current_app.email
-AttributeError: 'Flask' object has no attribute 'email'
-2022-06-26 21:20:51,914 ERROR: Exception on /edit_profile [GET] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\main\routes.py", line 95, in edit_profile
+    if form.validate_on_submit():
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\main\forms.py", line 29, in validate_email
+    if  re.fullmatch(regex,email) != True:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\re.py", line 195, in fullmatch
+    return _compile(pattern, flags).fullmatch(string)
+TypeError: expected string or bytes-like object
+2022-06-27 22:25:42,418 ERROR: Exception on /edit_profile [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
 Traceback (most recent call last):
   File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
     response = self.full_dispatch_request()
@@ -31,13 +39,24 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_login\utils.py", line 303, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
-  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\main\routes.py", line 104, in edit_profile
-    form.email.data = current_app.email
-AttributeError: 'Flask' object has no attribute 'email'
-2022-06-26 21:22:20,909 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-26 21:33:49,522 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-26 21:33:57,840 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
-2022-06-26 21:34:11,327 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\main\routes.py", line 95, in edit_profile
+    if form.validate_on_submit():
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\main\forms.py", line 29, in validate_email
+    if  re.fullmatch(regex,email) != True:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\re.py", line 195, in fullmatch
+    return _compile(pattern, flags).fullmatch(string)
+TypeError: expected string or bytes-like object
+2022-06-27 22:26:33,792 ERROR: Exception on /edit_profile [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
 Traceback (most recent call last):
   File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
     response = self.full_dispatch_request()
@@ -47,33 +66,23 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\auth\routes.py", line 26, in login
-    user = User.query.filter_by(email=form.email.data).first()
-AttributeError: 'LoginForm' object has no attribute 'email'
-2022-06-26 21:34:29,434 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
-Traceback (most recent call last):
-  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\auth\routes.py", line 26, in login
-    user = User.query.filter_by(email=form.email.data).first()
-AttributeError: 'LoginForm' object has no attribute 'email'
-2022-06-26 21:34:47,693 ERROR: Exception on /auth/login [POST] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
-Traceback (most recent call last):
-  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\auth\routes.py", line 26, in login
-    user = User.query.filter_by(email=form.email.data).first()
-AttributeError: 'LoginForm' object has no attribute 'email'
-2022-06-26 21:36:27,259 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_login\utils.py", line 303, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\main\routes.py", line 95, in edit_profile
+    if form.validate_on_submit():
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\main\forms.py", line 29, in validate_email
+    if  re.fullmatch(regex,email) != True:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\re.py", line 195, in fullmatch
+    return _compile(pattern, flags).fullmatch(string)
+TypeError: expected string or bytes-like object
+2022-06-27 22:28:03,635 INFO: Microblog startup [in C:\Git-CMU\Module3-new-feature\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
