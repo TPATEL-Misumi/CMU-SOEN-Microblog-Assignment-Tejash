@@ -37,6 +37,7 @@ def export_posts(user_id):
             time.sleep(5)
             i += 1
             _set_task_progress(100 * i // total_posts)
+
         send_email(
                    '[Microblog] Your blog posts',
                    sender=app.config['ADMINS'][0],
@@ -56,6 +57,6 @@ def export_posts(user_id):
                                 )],
                    sync=True
                    )
-    except Exception:
+    except Exception as e:
         _set_task_progress(100)
-        app.logger.error('Unhandled exception', exc_info=sys.exc_info())
+        app.logger.error('Unhandled exception', exc_info=sys.exc_info(e))

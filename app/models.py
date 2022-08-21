@@ -157,8 +157,8 @@ class User(UserMixin, PaginatedAPIMixin, db.Model):
         try:
             id = jwt.decode(token, current_app.config['SECRET_KEY'],
                             algorithms=['HS256'])['reset_password']
-        except Exception:
-            return
+        except Exception as e:
+            return e
         return User.query.get(id)
 
     def new_messages(self):

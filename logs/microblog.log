@@ -4,3 +4,31 @@
 2022-07-31 14:02:29,290 INFO: Microblog startup [in C:\Git-CMU\Module6-static-analysis\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
 2022-08-03 09:58:30,391 INFO: Microblog startup [in C:\Git-CMU\Module6-static-analysis\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
 2022-08-11 16:54:08,361 INFO: Microblog startup [in C:\Git-CMU\Module6-static-analysis\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+2022-08-21 17:52:19,337 INFO: Microblog startup [in C:\Git-CMU\Static\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+2022-08-21 17:55:43,454 INFO: Microblog startup [in C:\Git-CMU\Static\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+2022-08-21 17:55:54,169 ERROR: Exception on / [GET] [in C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_login\utils.py", line 298, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_login\login_manager.py", line 193, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_login\utils.py", line 133, in login_url
+    base = expand_login_view(login_view)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask_login\utils.py", line 110, in expand_login_view
+    return url_for(login_view)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\tpatel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\werkzeug\routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
+2022-08-21 18:01:32,091 INFO: Microblog startup [in C:\Git-CMU\Static\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
