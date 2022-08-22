@@ -32,3 +32,6 @@ Traceback (most recent call last):
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
 2022-08-21 18:01:32,091 INFO: Microblog startup [in C:\Git-CMU\Static\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+2022-08-21 18:44:56,664 INFO: Microblog startup [in C:\Git-CMU\Static\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+2022-08-21 18:48:27,315 INFO: Microblog startup [in C:\Git-CMU\Static\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
+2022-08-21 18:58:28,518 INFO: Microblog startup [in C:\Git-CMU\Static\CMU-SOEN-Microblog-Assignment-Tejash\app\__init__.py:89]
